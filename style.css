@@ -7,14 +7,45 @@
   box-sizing: border-box;
 }
 
+body {
+  color: #e73c7e;
+}
+nav{
+  color:#e73c7e;
+}
+
 .row{
   border: 2px solid black;
   padding: 0 0 20px;
 }
 
-.col{
-  border: 2px solid black;
+.row {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
+
+nav{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* .col{
+  border: 2px solid black;
+} */
 /* html,
 body,
 .wrapper {
